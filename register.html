@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="src/input.css">
+    <title>Register</title>
+</head>
+<body>
+    <!-- nav -->
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-lg bg-white  fixed-top shadow-lg">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/ahmedelshrkawy7.github.io_e-commerce-js_images_Log.png" alt="" class="image ms-3"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  px-3  " id="navbarNav">
+    <ul class="navbar-nav  me-auto">
+            <li class="nav-item">
+            <a class="nav-link  fw-bold word"  aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold mb-lg-0 mb-3" aria-disabled="true" href="cart.html">Cart</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav  ms-auto"> 
+        <li class="nav-item">
+            <a class="nav-link" href="register.html"><button class="butt ms-lg-5">Register</button></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html"><button class="butt">Login</button></a>
+        </li>
+    </ul> 
+    </div>
+</div>
+</nav>
+</div> 
+<!-- section2 -->
+<section class="my-5 pt-3">
+    <div class="container d-flex justify-content-center align-items-center my-5">
+    <div class="row shadow-lg rounded-4 col-lg-5 col-md-8 col-12 p-4 my-5">
+        <h2 class="text-center">Register</h2>
+        <div>
+            <div class="d-flex flex-column">
+                <label for="text" class="fw-bold">Name</label>
+                <input type="text" name="text" id="text" placeholder="Your Name" class="mt-2 mb-4 name" required>
+            </div>
+            <div class="d-flex flex-column">
+                <label for="email" class="fw-bold">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" class="mt-2 mb-4 email" required>
+            </div>
+            <div  class="d-flex flex-column">
+                <label for="password" class="fw-bold">Password</label>
+                <input type="password" name="password" id="password" placeholder="Your Password" class="mt-2 mb-4 password" required>
+            </div>
+            <div class="text-center">
+                <h6 class="head6 text-danger"></h6>
+                <button class="butt my-2 register" type="button">Register</button>
+                <h6>Alreedy Have Account ? <a href="login.html" style="color:#FF8C00; text-decoration:none;">Login </a></h6>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+<script type="module" src="register.js"></script>
+</html>
